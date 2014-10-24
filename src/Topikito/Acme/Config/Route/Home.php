@@ -16,8 +16,13 @@ class Home extends Router
 
     public function load()
     {
-        $this->_app->match('/', function () {
+        $this->_app->get('/', function () {
                 $controller = new Controller\Home($this->_app);
+                return $controller->index();
+            });
+
+       $this->_app->get('/hello', function () {
+                $controller = new Controller\Helloworld($this->_app);
                 return $controller->index();
             });
     }

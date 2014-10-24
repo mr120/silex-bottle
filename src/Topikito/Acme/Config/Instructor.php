@@ -2,8 +2,8 @@
 
 namespace Topikito\Acme\Config;
 
-use app\Config\Bridge\BaseConfigLoader;
-use app\Config\Bridge\BaseInstructor;
+use app\config\Bridge\BaseConfigLoader;
+use app\config\Bridge\BaseInstructor;
 use Topikito\Acme\Config;
 
 class Instructor extends BaseInstructor

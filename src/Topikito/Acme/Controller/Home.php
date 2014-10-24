@@ -2,7 +2,7 @@
 
 namespace Topikito\Acme\Controller;
 
-use app\Core;
+use app\core;
 use Topikito\Acme\Plugin\AuthUser;
 use Topikito\Acme\Sal;
 use Silex\Application;
@@ -32,7 +32,7 @@ class Home extends Core\BaseController
      */
     public function index()
     {
-        return $this->view->render('Home/index.html.twig');
+        return $this->view->render('Home/index.html.twig', ['title' => 'Acme', 'desc'=>'It\'s working!']);
     }
 
 }

@@ -2,8 +2,8 @@
 
 namespace Topikito\Acme\Config\ServiceLoader;
 
-use app\Config\Bridge\BaseServiceLoader;
-use app\Config\ServiceProvider\BaseRedisServiceProvider;
+use app\config\Bridge\BaseServiceLoader;
+use app\config\ServiceProvider\BaseRedisServiceProvider;
 use Silex\Application;
 
 /**

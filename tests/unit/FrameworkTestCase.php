@@ -12,7 +12,8 @@ class FrameworkTestCase extends WebTestCase {
 
     public function createApplication() {
         if (is_null(self::$_app))  {
-            self::$_app = require dirname(dirname(__DIR__)) . '/app/Config/Bootstrap.php';
+            self::$_app = require dirname(dirname(__DIR__)) . '/app/config/Bootstrap.php';
+            
             self::$_app['debug'] = true;
             self::$_app['exception_handler']->disable();
         }

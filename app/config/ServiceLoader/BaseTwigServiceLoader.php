@@ -1,8 +1,8 @@
 <?php
 
-namespace app\Config\ServiceLoader;
+namespace app\config\ServiceLoader;
 
-use app\Config\Bridge\BaseServiceLoader;
+use app\config\Bridge\BaseServiceLoader;
 use Silex\Provider\TwigServiceProvider;
 
 /**
